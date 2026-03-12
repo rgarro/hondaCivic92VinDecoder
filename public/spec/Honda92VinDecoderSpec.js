@@ -31,15 +31,15 @@ describe("Honda92VinDecoder", function () {
         expect(true).toBeTrue();
     });
 
-    /*describe("Honda92VinDecoder.opt", function () {
+    describe("Honda92VinDecoder.manufacturer", function () {
 
         beforeAll(function () {
             Honda92VinDecoder.init();
         });
 
-        it("should Implement canvas:string,factorycode", function () {
+        it("should be three characters length", function () {
 
         });
-    });*/
+    });
 
 });

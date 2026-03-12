@@ -31,7 +31,7 @@ describe("Honda92EngineNumberDecoder", function () {
         expect(true).toBeTrue();
     });
 
-    /*describe("Honda92EngineNumberDecoder.opt", function () {
+    describe("Honda92EngineNumberDecoder.opt", function () {
 
         beforeAll(function () {
             Honda92EngineNumberDecoder.init();
@@ -40,6 +40,6 @@ describe("Honda92EngineNumberDecoder", function () {
         it("should Implement canvas:string,factorycode", function () {
 
         });
-    });*/
+    });
 
 });
