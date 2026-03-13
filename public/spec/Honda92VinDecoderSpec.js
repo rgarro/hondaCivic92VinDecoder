@@ -38,7 +38,7 @@ describe("Honda92VinDecoder", function () {
         });
 
         it("should be three characters length", function () {
-
+            expect(Honda92VinDecoder.manufacturer.length).toBe(3);
         });
     });
 
