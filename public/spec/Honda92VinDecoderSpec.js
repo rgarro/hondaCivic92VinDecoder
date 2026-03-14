@@ -31,6 +31,7 @@ describe("Honda92VinDecoder", function () {
         expect(true).toBeTrue();
     });
 
+    //Manufacturere
     describe("Honda92VinDecoder.manufacturer", function () {
 
         beforeAll(function () {
@@ -39,6 +40,20 @@ describe("Honda92VinDecoder", function () {
 
         it("should be three characters length", function () {
             expect(Honda92VinDecoder.manufacturer.length).toBe(3);
+        });
+    });
+
+    //Line engine and body type
+    //lineEngineBodyTypeCivic1500: "EH2",//civic 1500 2 door
+    //lineEngineBodyTypeCivic1600: "EH3",//civic 1600 2 door
+    describe("Honda92VinDecoder.lineEngineBodyType", function () {
+
+        beforeAll(function () {
+            Honda92VinDecoder.init();
+        });
+
+        it("should be three characters length", function () {
+            expect(Honda92VinDecoder.lineEngineBodyType.length).toBe(3);
         });
     });
 
