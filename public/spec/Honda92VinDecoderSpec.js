@@ -55,6 +55,18 @@ describe("Honda92VinDecoder", function () {
         it("should be three characters length", function () {
             expect(Honda92VinDecoder.lineEngineBodyType.length).toBe(3);
         });
+
+        it("should have validateLineEngineChunk method", function () {
+            expect(Honda92VinDecoder.validateLineEngineChunk).toBeFunction();
+        });
+
+
+        it("validateLineEngineChunk method should return true on valid data and false on invalid", function () {
+            validLineEngineChunk = "AH3";
+            invalidLineEngineChunk = "XY3";
+            expect(Honda92VinDecoder.validateLineEngineChunk(validLineEngineChunk)).toBeTrue();
+            expect(Honda92VinDecoder.validateLineEngineChunk(invalidLineEngineChunk)).toBeFalse();
+        });
     });
 
 });

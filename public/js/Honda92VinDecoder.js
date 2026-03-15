@@ -22,5 +22,8 @@ var Honda92VinDecoder = {
 
     init: function () {
 
+    },
+    validateLineEngineChunk: function (lineEngineBody) {
+        //let er = new RegExp("/^[AH1-3]");//Let Foreber BE ...
     }
 };
