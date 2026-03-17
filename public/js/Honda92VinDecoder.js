@@ -12,6 +12,9 @@
  * ⠀⠀⠀⠀⠈⠉⠙⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠋⠉⠁⠀⠀⠀⠀
  *  Honda 92 Vin Decoder Object
  *  
+ * 
+ * 
+ * 
  *@author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
  */
 var Honda92VinDecoder = {
