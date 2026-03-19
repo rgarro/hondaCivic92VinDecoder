@@ -27,11 +27,9 @@ var Honda92VinDecoder = {
 
     },
     validateLineEngineChunk: function (lineEngineBody) {
-        //let er = new RegExp("/^[AH1-3]");//Let Foreber BE ...
-        //const er = /^AH1-3/g;
-        let res = lineEngineBody.match(/EH1[2-3]/);
+        let res = lineEngineBody.search(/EH1[2-3]/);//Let Foreber BE ...
         console.log("here:" + res);
-        let ret = (res.lenght > 0) ? true : false;
+        let ret = (res > -1) ? true : false;
         return ret;
     }
 };
