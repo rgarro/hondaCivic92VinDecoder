@@ -53,7 +53,7 @@ describe("Honda92VinDecoder", function () {
         });
 
         it("should be three characters length", function () {
-            lineEngineChunk = "AHdf3";
+            lineEngineChunk = "AH3";
             expect(lineEngineChunk.length).toBe(3);
             expect(Honda92VinDecoder.validateLineEngineChunk(lineEngineChunk)).toBeFalse();
         });

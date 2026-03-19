@@ -11,12 +11,13 @@
  * ⠀⠀⠻⢿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⡿⠟⠀⠀
  * ⠀⠀⠀⠀⠈⠉⠙⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠋⠉⠁⠀⠀⠀⠀
  *  Honda 92 Engine Number Decoder Object
- *  Heroku - EngineYard
+ * 
  * 
  * 
  *@author Rolando <rgarro@gmail.com> <https://emptyart.github.io>
  */
 var Honda92EngineNumberDecoder = {
+
     init: function () {
 
     }
