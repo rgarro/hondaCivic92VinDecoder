@@ -31,15 +31,15 @@ describe("Honda92EngineNumberDecoder", function () {
         expect(true).toBeTrue();
     });
 
-    /*describe("Honda92EngineNumberDecoder.opt", function () {
+    describe("Honda92EngineNumberDecoder.enginetype", function () {
 
         beforeAll(function () {
             Honda92EngineNumberDecoder.init();
         });
 
-        it("should Implement canvas:string,factorycode", function () {
-
+        it("should Validate EngineType", function () {
+            expect(Honda92EngineNumberDecoder.engineType.length).toBe(5);
         });
-    });*/
+    });
 
 });
