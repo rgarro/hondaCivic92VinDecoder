@@ -28,7 +28,6 @@ var Honda92VinDecoder = {
     },
     validateLineEngineChunk: function (lineEngineBody) {
         let res = lineEngineBody.search(/EH[2-3]/);//Let Foreber BE ...
-        //console.log("here:" + res);
         let ret = (res > -1) ? true : false;
         return ret;
     }

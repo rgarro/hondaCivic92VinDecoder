@@ -39,7 +39,10 @@ describe("Honda92VinDecoder", function () {
         });
 
         it("should be three characters length", function () {
-            expect(Honda92VinDecoder.manufacturer.length).toBe(3);
+            console.log("here manufacturer: " + Honda92VinDecoder.manufacturer);
+            console.log("here manufacturer: " + Honda92VinDecoder.manufacturer.length);
+            let ln = Honda92VinDecoder.manufacturer.length;
+            expect(ln).toBe(3);
         });
     });
 
@@ -64,7 +67,7 @@ describe("Honda92VinDecoder", function () {
 
 
         it("validateLineEngineChunk method should return true on valid data and false on invalid", function () {
-            validLineEngineChunk = "AH3";
+            validLineEngineChunk = "EH3";
             invalidLineEngineChunk = "XY3";
             expect(Honda92VinDecoder.validateLineEngineChunk(validLineEngineChunk)).toBeTrue();
             expect(Honda92VinDecoder.validateLineEngineChunk(invalidLineEngineChunk)).toBeFalse();
