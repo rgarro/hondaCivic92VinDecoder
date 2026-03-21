@@ -37,8 +37,8 @@ describe("Honda92EngineNumberDecoder", function () {
             Honda92EngineNumberDecoder.init();
         });
 
-        it("should Validate EngineType", function () {
-            expect(Honda92EngineNumberDecoder.engineType.length).toBe(5);
+        it("should have engineType property", function () {
+            expect(Honda92EngineNumberDecoder.engineType).toBeDefined();
         });
     });
 

@@ -18,6 +18,10 @@
  */
 var Honda92EngineNumberDecoder = {
 
+    engineType: "",
+
+    engineTypes: ["D15B7", "D15B8", "D15Z1", "D15Z6"],
+
     init: function () {
 
     }
